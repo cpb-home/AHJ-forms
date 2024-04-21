@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightcyan;
+  padding-top: 30px;
+  position: relative;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.container>button {
+  font-size: 16px;
+  padding: 5px;
+  background-color: lightgreen;
+  color: brown;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.container>button:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.tip {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  width: 200px;
+  gap: 15px;
+  background-color: rgba(237, 255, 174, .8);
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 180px;
+}
+
+.tip>h5 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tip>p {
+  font-size: 16px;
+  text-align: left;
+  text-indent: 20px;
+}
+
+/*# sourceMappingURL=main.css.map*/
