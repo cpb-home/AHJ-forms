@@ -1,5 +1,3 @@
-import { checkCardNumber, checkTrueCard } from '../codeFunctions';
-
 test('sometest', () => {
   expect(2).toBe(2);
 });

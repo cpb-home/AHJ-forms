@@ -2,9 +2,9 @@
 const path = require('node:path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   devServer: {
     port: 9000
   },
@@ -59,13 +59,5 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
     }),
-    new CopyPlugin({
-      patterns: [
-          {
-            from: path.resolve(__dirname, 'src/img'),
-            to:   path.resolve(__dirname, 'dist/img')
-          }
-        ]
-      })
   ],
 };
